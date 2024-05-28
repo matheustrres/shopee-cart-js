@@ -12,6 +12,12 @@ export class Cart {
 	}
 
 	constructor(items) {
+		if (items.length) {
+			for (const item of items) {
+				Cart.#validateItem(item);
+			}
+		}
+
 		this.#items = items || [];
 	}
 
