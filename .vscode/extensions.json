@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "dzhavat.bracket-pair-toggler",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "mhutchie.git-graph"
+  ]
+}

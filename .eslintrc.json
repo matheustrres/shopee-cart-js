@@ -1,0 +1,37 @@
+{
+	"parserOptions": {
+		"ecmaVersion": 2022,
+		"sourceType": "module"
+	},
+	"env": {
+		"node": true
+	},
+	"plugins": ["eslint-plugin-import-helpers"],
+	"root": true,
+	"ignorePatterns": [".eslintrc.js"],
+	"rules": {
+		"no-dupe-class-members": "error",
+		"no-duplicate-imports": "error",
+		"no-extra-semi": "warn",
+		"no-mixed-spaces-and-tabs": "off",
+		"no-tabs": "off",
+		"import-helpers/order-imports": [
+			"warn",
+			{
+				"newlinesBetween": "always",
+				"groups": [
+					"/^node/",
+					"module",
+					"absolute",
+					"index",
+					"sibling",
+					"parent"
+				],
+				"alphabetize": {
+					"order": "asc",
+					"ignoreCase": false
+				}
+			}
+		]
+	}
+}
